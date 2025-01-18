@@ -1,0 +1,465 @@
+:root {
+    --branco-principal:#FFFFFF;
+    --cinza-segundario:#C0C0C0;
+    --botao-azul:#167BF7;
+    --cor-de-fundo: #00030C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    background: url(/img/Background.png) no-repeat;
+    background-size: cover; /*Ajusta a imagem para cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh; /* Defina uma altura visível */
+    max-width: 100%; /* Garante que ocupe toda a largura */
+}
+
+.titulo-principal {
+    color: var(--branco-principal);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 10%;
+    margin-left: 2%;
+    width: 588px;
+    height: 102px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.img-logo {
+    width: 348px;
+    height: 100px;
+    margin-left: 10%;
+    margin-bottom: 54px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+}
+
+.btnAssine {
+    width: 512px;
+    height: 56px;
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 18px;
+}
+
+.btnAssine:hover {
+    box-shadow: 0px 0px 15px rgba(22, 123, 247, 0.8);
+    transition: box-shadow 0.3s ease; /* Animação suave */
+    transform: scale(1.05);
+}
+
+.btnSomente {
+    width: 512px;
+    height: 56px;
+    background-color: transparent;
+    color: var(--branco-principal);
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid var(--branco-principal);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 18px;
+}
+
+.btnSomente:hover {
+    box-shadow: 0px 0px 15px rgba(22, 123, 247, 0.8);
+    transition: box-shadow 0.3s ease; /* Animação suave */
+    transform: scale(1.05);
+}
+
+.observacao {
+    color: var(--branco-principal);
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-left: 6%;
+    margin-bottom: 10px;
+}
+
+.bloco-secundario {
+    display: flex;
+    justify-content: center;
+    gap: 69px;
+    height: 100vh;
+    align-items: center;
+}
+
+.secundario {
+    display: flex;
+    max-width: 498px;
+    height: 506px;
+    margin-left: 12%;
+}
+
+.secundario-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-secundario {
+    color: var(--branco-principal);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.texto-secundario {
+    color: var(--cinza-segundario);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 22px;
+    max-width: 80%;
+    line-height: 120%;
+}
+
+.bloco-terciario {
+    display: flex;
+    justify-content: center;
+    gap: 69px;
+    height: 100vh;
+    align-items: center;
+}
+
+.terciario-texto {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.texto-terciario {
+    color: var(--cinza-segundario);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 22px;
+    max-width: 80%;
+    line-height: 120%;
+}
+
+.img-terciario {
+    display: flex;
+    margin-right: 90px;
+}
+
+.img-quaternario {
+    width: 547px;
+    height: 324px;
+}
+
+.quaternario {
+    display: flex;
+    max-width: 498px;
+    margin-left: 12%;
+}
+
+.quinta-secao {
+    height: 100vh;
+}
+
+.dispositivos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.bloco-dispositivos {
+    display: flex;
+    justify-content: center;
+    gap: 69px;
+}
+
+.dispositivos-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-dispositivos {
+    color: var(--branco-principal);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.pDispositivo {
+    color: var(--branco-principal);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+    /* max-width: 80%; */
+    line-height: 120%;
+    text-align: center;
+}
+
+.rodape-alura {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-rodape {
+    display: flex;
+}
+
+.rodape-opcoes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.rodape-opcoes a {
+    text-decoration: none;
+}
+
+.texto-rodape {
+    color: var(--branco-principal);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.direitos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 100px;
+    gap: 20px;
+    align-items: center;
+}
+
+.pDireitos {
+    color: var(--cinza-segundario);
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-align: center;
+    max-width: 1000px;
+    line-height: 150%;
+}
+
+@media (max-width: 768px) {
+    .principal {
+        background-size: contain;
+        height: auto;
+        padding: 20px;
+    }
+
+    .titulo-principal {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .img-logo {
+        height: auto;
+        margin-left: 0;
+    }
+
+    .botoes {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .btnAssine, .btnSomente {
+        height: auto;
+        padding: 15px;
+    }
+
+    .observacao {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .bloco-secundario, .bloco-terciario {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .bloco-terciario {
+        flex-direction: column-reverse;
+    }
+
+    .secundario, .terciario {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .quaternario {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .secundario-texto, .terciario-texto {
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-secundario, .img-terciario, .img-quaternario {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-terciario {
+        margin-bottom: 50px;
+    }
+
+    .quinta-secao {
+        height: auto;
+        padding: 20px;
+    }
+
+    .titulo-dispositivos {
+        font-size: 2rem;
+    }
+
+    .bloco-dispositivos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pDispositivo {
+        font-size: 1.5rem;
+    }
+
+    .rodape {
+        padding: 20px;
+    }
+
+    .rodape-opcoes {
+        /* flex-direction: column; */
+        gap: 20px;
+    }
+
+    .direitos {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .principal {
+        background-size: contain;
+        height: auto;
+        padding: 15px;
+    }
+
+    .titulo-principal {
+        font-size: 1.2rem;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .img-logo {
+        height: auto;
+        margin-left: 0;
+    }
+
+    .botoes {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .btnAssine, .btnSomente {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .observacao {
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .texto-secundario {
+        margin-bottom: 0;
+    }
+
+    .bloco-secundario, .bloco-terciario {
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 15px;
+    }
+
+    .secundario, .terciario {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .secundario-texto, .terciario-texto {
+        align-items: center;
+        text-align: center;
+    }
+
+    .terciario-texto {
+        margin-top: 20px;
+    }
+
+    .img-secundario, .img-terciario, .img-quaternario {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .quinta-secao {
+        height: auto;
+        padding: 15px;
+    }
+
+    .titulo-dispositivos {
+        font-size: 1.5rem;font-size: 1.5rem;
+        text-align: center;
+        line-height: 120%;
+    }
+    .bloco-dispositivos {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pDispositivo {
+        font-size: 1.2rem;
+    }
+
+    .rodape-opcoes {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .direitos {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
