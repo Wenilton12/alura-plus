@@ -382,6 +382,7 @@ body {
     }
 
     .img-logo {
+        width: 45%;
         height: auto;
         margin-left: 0;
     }
